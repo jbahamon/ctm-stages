@@ -5,8 +5,8 @@
 ;--------------------------------------------------------
 [Info]
  ;Name of the stage.
-name = "Guardia Prison"
-displayname = "Guardia Prison" ;Name to display
+name = "Tyrano Lair"
+displayname = "Tyrano Lair" ;Name to display
 versiondate = 02,05,2014    ;Version date of stage (MM,DD,YYYY or X.XX)
 mugenversion = 1.0          ;Version of M.U.G.E.N stage works on (X.XX)
 author = "Silent Protagonist"         ;Stage author name
@@ -21,8 +21,8 @@ starty = 0
  ;You may want to fiddle a bit with these values to make sure the
  ;background doesn't move too far or too little
  ;***
-boundleft = -160
-boundright = 160
+boundleft = -30
+boundright = 30
 
  ;High and low bound of camera
  ;High is a negative number. Make is more negative if you want to
@@ -99,7 +99,7 @@ screenright = 15   ;Right edge
  ;top of the screen.
  ;Adjust this value to move the ground level up/down in the screen.
  ;***
-zoffset = 140
+zoffset = 155
 
  ;Leave this at 1. It makes the players face each other
 autoturn = 1
@@ -119,7 +119,7 @@ yscale = 1
 [Shadow]
  ;This is the shadow darkening intensity. Valid values range from
  ;0 (lightest) to 256 (darkest). Defaults to 128 if omitted.
-intensity = 0
+intensity = 70
 
  ;This is the shadow color given in r,g,b. Valid values for each
  ;range from 0 (lightest) to 255 (darkest).
@@ -132,7 +132,7 @@ color = 0,0,0
  ;to make the shadow longer. You can use a NEGATIVE scale factor
  ;to make the shadow fall INTO the screen.
  ;Defaults to 0.4 if omitted.
-yscale = .3
+yscale = 	1.1
 
  ;This parameter lets you set the range over which the shadow is
  ;visible. The first value is the high level, and the second is
@@ -195,7 +195,7 @@ bgmvolume = 100
 ; Main background definition
 [BGdef]
  ;Filename of sprite data
-spr = GuardiaPrison.sff
+spr = TyranoLair.sff
 
  ;Set to 1 if you want to clear the screen to magenta before
  ;drawing layer 0 (the default background). Good for spotting "holes"
@@ -212,14 +212,14 @@ start = 0, 0
 layerno = 0
 delta = 0,0
 mask = 0
-tile = 0,0
+tile = 1, 1
 
 ;----------
 ; Start each background element with the following:
 ; Make sure it's "[BG n]", where n is anything you like (it's only used to
 ; report errors.) For example, you could use:  [BG TheFloor]
 ; Specify as many as you like. This is an example of a normal background:
-[BG Mountain]
+[BG Crater]
 
  ;The background type goes here: for now, only NORMAL and PARALLAX
  ;If this line is omitted, the type will be assumed to be normal.
@@ -239,7 +239,7 @@ layerno = 0
  ;This is the starting location of the background in the format
  ;x, y
  ;If this line is omitted, the default value of 0,0 will be assumed.
-start = 0, 200
+start = -300, 240
 
  ;These are the number of pixels the background moves for every single unit
  ;of camera movement, in the format
@@ -276,7 +276,7 @@ mask  = 0
  ;The format for tiling is x,y. For each of them, the value is:
  ;0 to use no tiling, 1 to tile, n where (n>1) to tile n times.
  ;If this line is omitted, it's assumed that there will be no tiling.
-tile  = 0, 0
+tile  = 3, 0
 
  ;This is the x and y space between each tile, for tiled backgrounds
  ;If omitted, default value is 0,0
@@ -299,45 +299,21 @@ tilespacing = 0,0
 ;windowdelta = 0,0
 
 ;----------
-[BG PrisonMountain]
+[BG Castle]
 type  = normal
-spriteno = 1, 1
-start = -255, 200
+spriteno = 2,0
+start = 0, 0
 layerno = 0
-delta = 0, 0
-mask = 1
-velocity = 0, 0
-tile = 0, 0
-
-[BG PrisonMountain]
-type  = normal
-spriteno = 1, 1
-start = 255, 200
-layerno = 0
-delta = 0, 0
+delta = 1,1
 mask = 1
 velocity = 0, 0
 tile = 0, 0
 
 
-;----------
-[BG PrisonFloorBG]
-type  = normal
-spriteno = 2, 0
-start = 0, 140
-layerno = 0
-delta = 1, 1
-mask = 1
-velocity = 0, 0
-tile = 0, 0
+; Star
+[Begin Action 1]
+3,0, 0,0, 12
+3,2, 0,0, 12
+3,0, 0,0, 12
+3,1, 0,0, 12
 
-[BG PrisonFloorFG]
-type  = normal
-spriteno = 2, 1
-layerno = 1
-start = 0, 140
-delta = 1, 1
-mask = 1
-trans = add1
-velocity = 0, 0
-tile = 0, 0

@@ -202,7 +202,7 @@ spr = ZenanBridge.sff
  ;in your background.
  ;Remember to turn this off when you are done debugging the background,
  ;because it slows down performance.
-debugbg = 1
+debugbg = 0
 
 ;----------
 [BG BlackBG]
@@ -212,7 +212,7 @@ start = 0, 0
 layerno = 0
 delta = 0,0
 mask = 0
-tile = 1, 1
+tile = 0, 0
 
 ;----------
 ; Start each background element with the following:
@@ -303,11 +303,11 @@ tilespacing = 0,0
 [BG Water]
 type  = normal
 spriteno = 3,3
-start = -300, 80
+start = -160, 80
 layerno = 0
 delta = 0, 0
 mask = 0
-tile = 10, 10
+tile = 7, 7
 
 [BG Water Shine]
 type  = anim

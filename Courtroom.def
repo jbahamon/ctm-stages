@@ -202,7 +202,7 @@ spr = Courtroom.sff
  ;in your background.
  ;Remember to turn this off when you are done debugging the background,
  ;because it slows down performance.
-debugbg = 1
+debugbg = 0
 
 ;----------
 [BG BlackBG]
@@ -212,7 +212,7 @@ start = 0, 0
 layerno = 0
 delta = 0,0
 mask = 0
-tile = 1, 1
+tile = 0,0
 
 ;----------
 ; Start each background element with the following:
@@ -342,7 +342,7 @@ tile = 0, 0
 [BG Judge]
 type  = anim
 actionno = 3
-start = 0, 142
+start = 0, 120
 layerno = 0
 delta = 0.45, 0.45
 mask = 1
