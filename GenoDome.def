@@ -234,6 +234,16 @@ mask = 1
 tile = 0,0
 velocity = 0,0
 
+[BG Wall Lights]
+type = anim
+actionno = 1
+start = -176, 41
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
+
 [BG humans]
 type = normal
 spriteno = 4,0
@@ -254,7 +264,65 @@ mask = 1
 tile = 0,0
 velocity = 0,0
 
+[BG Sensor Lights]
+type = anim
+actionno = 1
+start = -64, 88
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
 
+[BG Sensor Lights]
+type = anim
+actionno = 1
+start = 103, 88
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
+
+[BG Sensor Lights]
+type = anim
+actionno = 1
+start = 204, 88
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
+
+[BG Screen Contents]
+type = anim
+actionno = 2
+start = 33, 58
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
+
+[BG Screen Contents]
+type = anim
+actionno = 3
+start = 250, 58
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
+
+[BG Screen Contents]
+type = anim
+actionno = 2
+start = -337, 58
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
 
 [BG Floor]
 type = normal
@@ -286,6 +354,15 @@ mask = 1
 tile = 0,0
 velocity = 0,0
 
+[BG Arrows]
+type = anim 
+actionno = 4
+start = 288, 100
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
 
 [BG processor]
 type = normal
@@ -295,4 +372,88 @@ layerno = 0
 delta = 1,1
 mask = 1
 tile = 0,0
-velocity = 00,0
+velocity = 0,0
+
+[BG Arrows]
+type = anim 
+actionno = 4
+start = -160, 100
+layerno = 0
+delta = 1,1
+mask = 1
+tile = 0,0
+velocity = 0,0
+
+
+[BG Beacon]
+type = anim 
+actionno = 5
+start = -176, 164
+layerno = 0
+delta = 1,1
+mask = 0
+
+
+[BG Beacon]
+type = anim 
+actionno = 5
+start = -96, 164
+layerno = 0
+delta = 1,1
+mask = 0
+
+
+[BG Beacon]
+type = anim 
+actionno = 5
+start = 276, 164
+layerno = 0
+delta = 1,1
+mask = 0
+
+; Lights
+[Begin Action 1]
+1,4, 0,0, 4
+1,4, 0,0, 4, , AS128D128
+1,4, 0,0, 4, , AS64D192
+1,4, 0,0, 4, , AS128D128
+1,4, 0,0, 4
+
+; Screens
+[Begin Action 2]
+5,0, 0,0, 8
+5,1, 0,0, 8
+5,0, 0,0, 8
+5,2, 0,0, 8
+
+; Screens 2
+[Begin Action 3]
+5,3, 0,0, 3
+5,4, 0,0, 3
+5,3, 0,0, 3
+5,4, 0,0, 3
+5,3, 0,0, 3
+5,4, 0,0, 3
+5,3, 0,0, 3
+5,4, 0,0, 3
+5,3, 0,0, 3
+5,4, 0,0, 3
+5,3, 0,0, 3
+5,4, 0,0, 12
+
+
+; Arrows
+[Begin Action 4]
+1,5, 0,0, 22
+1,5, 0,0, 22, , AS0D256
+
+
+; Beacon
+[Begin Action 5]
+6,0, 0,0, 4
+6,1, 0,0, 4
+6,2, 0,0, 4
+6,3, 0,0, 4
+6,2, 0,0, 4
+6,1, 0,0, 4
+
