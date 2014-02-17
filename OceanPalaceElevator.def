@@ -162,8 +162,8 @@ intensity = 0
  ;  bgmusic = 3.da
 bgmusic = sound/Undersea Palace.mp3
 
-;bgmloopstart = <sample number>
-;bgmloopend = <sample number>
+bgmloopstart = 4137820
+bgmloopend = 7880406
 
  ;Adjust the volume. 100 is for 100%.
 bgmvolume = 100

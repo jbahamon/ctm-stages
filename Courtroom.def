@@ -162,8 +162,8 @@ intensity = 0
  ;  bgmusic = 3.da
 bgmusic = sound/The Trial.mp3
 
-;bgmloopstart = <sample number>
-;bgmloopend = <sample number>
+bgmloopstart = 4273091
+bgmloopend = 8804790
 
  ;Adjust the volume. 100 is for 100%.
 bgmvolume = 100
