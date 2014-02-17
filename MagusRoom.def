@@ -160,10 +160,10 @@ intensity = 0
  ;0 will play a random audio track. For example, to play
  ;track 3 from a music CD, use:
  ;  bgmusic = 3.da
-bgmusic =
+bgmusic = sound/Battle With Magus.mp3
 
-;bgmloopstart = <sample number>
-;bgmloopend = <sample number>
+bgmloopstart = 3471848
+bgmloopend = 6563984
 
  ;Adjust the volume. 100 is for 100%.
 bgmvolume = 100
