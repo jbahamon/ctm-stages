@@ -162,8 +162,8 @@ intensity = 0
  ;  bgmusic = 3.da
 bgmusic = sound/Battle 2.mp3
 
-;bgmloopstart = <sample number>
-;bgmloopend = <sample number>
+bgmloopstart = 1209412
+bgmloopend = 4605016
 
  ;Adjust the volume. 100 is for 100%.
 bgmvolume = 100
