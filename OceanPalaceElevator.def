@@ -247,7 +247,7 @@ tile = 0,0
 [BG Mage]
 type  = anim
 actionno = 8
-start = 0, 100
+start = 0, 140
 layerno = 0
 delta = 1,1
 mask = 1
@@ -279,20 +279,7 @@ start = 40, 80
 layerno = 0
 delta = 1,1
 mask = 1
-sin.x = -50, 167, 0
-sin.y = -20, 83, 0
-tile = 0,0
-
-[BG Blue Scout]
-type  = anim
-actionno = 1
-id = 1
-start = -20, 80
-layerno = 0
-delta = 1,1
-mask = 1
-sin.x = -80, 307, 0
-sin.y = -10, 145, 0
+sin.y = 10, 80, 0
 tile = 0,0
 
 [BG Red Scout]
@@ -303,49 +290,36 @@ start = -40, 80
 layerno = 0
 delta = 1,1
 mask = 1
-sin.x = 50, 144, 60
-sin.y = 20, 66, 30
+sin.y = 10, 80, 0
 tile = 0,0
-
-[BG Red Scout]
-type  = anim
-actionno = 2
-id = 2
-start = 20, 90
-layerno = 0
-delta = 1,1
-mask = 1
-sin.x = 80, 182, 60
-sin.y = 10, 96, 30
-tile = 0,0
-
 
 [BG Yellow Scout]
 type  = anim
 actionno = 3
 id = 3
-start = -25, 70
+start = 0, 80
 layerno = 0
 delta = 1,1
 mask = 1
-sin.x = 50, 200, 60
-sin.y = -20,100, 60
 tile = 0,0
 
 
-[BG Yellow Scout]
-type  = anim
-actionno = 3
-id = 3
-start = 0, 100
-layerno = 0
-delta = 1,1
-mask = 1
-sin.x = 50, 240, 60
-sin.y = -20, 120, 60
-tile = 0,0
+[BGCtrlDef Peregrinator]
+; reset the whole deal every 600 ticks.
+looptime = 80
+ctrlID = 3
 
+; Set velocity of 2 pixels/sec rightward at time 0.
+[BGCtrl Walk Right]
+type = SinY
+time = 0
+value = 10, 80, 20
 
+; Set velocity of 2 pixels/sec leftward at time 300.
+[BGCtrl Walk Left]
+type = VelSet
+time = 300
+x = -2
 
 ; Blue Scout
 [Begin Action 1]
